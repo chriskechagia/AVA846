@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'/>
+    <title> Task02 </title>
+    <script src='aframe.min.js'> </script>
+    <script src='functionality.obfuscated.js'> </script>
+</head>
+
+<body> 
+
+    <a-scene>
+
+    
+        
+        <a-entity box='1 1 1' position='0 -0.5 13' rotation="0 0 0"></a-entity>
+        <a-sky color="#2E2E2E"></a-sky>
+        
+
+<!-- ASSETS -->   
+        <a-assets>
+            
+            <a-asset-item id="cloth01" src="./objects/lilac_set/lilac-set.obj"> </a-asset-item>
+            <a-asset-item id="cloth01mtl" src="./objects/lilac_set/lilac-set.mtl"> </a-asset-item>
+
+            <a-asset-item id="cloth02" src="./objects/black_dress/black-dress.obj"> </a-asset-item>
+            <a-asset-item id="cloth02mtl" src="./objects/black_dress/black-dress.mtl"> </a-asset-item>
+
+            <a-asset-item id="cloth03" src="./objects/black&white-dress/black&white_dress.obj"> </a-asset-item>
+            <a-asset-item id="cloth03mtl" src="./objects/black&white-dress/black&white_dress.mtl"> </a-asset-item>
+
+            <a-asset-item id="cloth04" src="./objects/patent_set/patent-set.obj"> </a-asset-item>
+            <a-asset-item id="cloth04mtl" src="./objects/patent_set/patent-set.mtl"> </a-asset-item>
+
+            <a-asset-item id="cloth05" src="./objects/corset_dress/corset-dress.obj"> </a-asset-item>
+            <a-asset-item id="cloth05mtl" src="./objects/corset_dress/corset-dress.mtl"> </a-asset-item>
+
+            <a-asset-item id="cloth06" src="./objects/black_puffy_sleeved_dress/black-puffy-sleeved-dress.obj"> </a-asset-item>
+            <a-asset-item id="cloth06mtl" src="./objects/black_puffy_sleeved_dress/black-puffy-sleeved-dress.mtl"> </a-asset-item>
+
+            <a-asset-item id="cloth07" src="./objects/corset_dress_md/corset-dress_md.obj"> </a-asset-item>
+            <a-asset-item id="cloth07mtl" src="./objects/corset_dress_md/corset-dress_md.mtl"> </a-asset-item>
+
+           
+        
+
+        </a-assets>
+
+<!-- ASSETS'S POSITION-->   
+             <a-entity position="0 -1 -1" scale="0.1 0.1 0.1" obj-model="obj: #cloth01; mtl: #cloth01mtl;"> </a-entity>
+
+             <a-entity position="-1 -1 -1.5" scale="0.3 0.3 0.3" obj-model="obj: #cloth02; mtl: #cloth02mtl;"> </a-entity>
+
+             <a-entity position="1 -1 -1.5" scale="1 1 1" obj-model="obj: #cloth03; mtl: #cloth03mtl;"> </a-entity>
+
+             <a-entity position="1 -1 0" rotation="0 180 0" scale="0.3 0.3 0.3" obj-model="obj: #cloth04; mtl: #cloth04mtl;"> </a-entity>
+
+             <a-entity position="-2.5 -1 1" scale="0.3 0.3 0.3" obj-model="obj: #cloth05; mtl: #cloth05mtl;"> </a-entity>
+
+             <a-entity position="-1 -1 -0.1" scale="0.04 0.04 0.04" obj-model="obj: #cloth06; mtl: #cloth06mtl;"> </a-entity>
+
+             <a-entity position="0 -1 -1" scale="1 1 1" obj-model="obj: #cloth07; mtl: #cloth07mtl;"> </a-entity>
+
+        
+<!-- ROOF -->         
+         <a-box height="0.15" width="6.04" depth='6' position="0 4.07 0.93" color="#C2C2C2" color="black"> </a-box>
+<!-- FLOOR -->       
+         <a-box height="0.15" width="6.04" depth='6' position="0 -1 0.93" color="pink"> </a-box>
+<!-- WALLS -->  
+         <a-box height="5" width="6" depth='0.15' position="0 1.5 -2" color="#C2C2C2"> </a-box>
+
+         <a-box height="5" width="0.15" depth='6' position="2.94 1.5 0.93" color="#C2C2C2"> </a-box>
+
+         <a-box height="5" width="0.15" depth='6' position="-2.94 1.5 0.93" color="#C2C2C2"> </a-box>
+
+         
+    </a-scene>
+	
+</body>
+</html>
